@@ -14,14 +14,14 @@ const counterReducer = (state = initialState, action) => {
             return {
                 counter: state.counter + 1,
                 showCounter: state.showCounter
-            };
+            }
         }            
         
         case 'DECREMENT':{
             return {
                     counter: state.counter - 1,
                     showCounter: state.showCounter
-                };
+                }
         }
                 
             
@@ -29,7 +29,7 @@ const counterReducer = (state = initialState, action) => {
             return {
                 counter: state.counter + action.amount,
                 showCounter: state.showCounter
-            };
+            }
         }
                
         case 'RESET':{
@@ -43,7 +43,7 @@ const counterReducer = (state = initialState, action) => {
             return {
                     counter: state.counter,                
                     showCounter: !state.showCounter
-                };
+                }
         }
         default: 
              return state;
